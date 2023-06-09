@@ -35,9 +35,13 @@ a:hover {
     }
 }
 
+.sidebar .nav-link {
+  transition: background-color 10s, color 5s;
+}
+
 .sidebar .nav-link:hover {
     background-color: #e9ecef;
-    color: rgba(255, 200, 57, 0.9);
+    color: #000;
 }
 
   
