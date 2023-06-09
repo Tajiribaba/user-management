@@ -16,6 +16,12 @@
     }
 }
 
+.sidebar .nav-link:hover {
+    background-color: #e9ecef;
+    color: rgba(255, 200, 57, 0.9);
+}
+
+  
 /* Add margin to the main content area to push it away from the sidebar */
 .main-content {
     margin-left: 250px; /* Same as the width of the sidebar */
