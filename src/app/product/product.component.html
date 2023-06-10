@@ -1,0 +1,38 @@
+v
+<div class="content">
+  <div class="row mt-5">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <span>Products</span>
+          <a class="btn btn-sm btn-success ml-auto" routerLink="/products/create">Add Product</a>
+        </div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Product Category</th>
+                <th scope="col">Price</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let product of products; let i = index">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ product.name }}</td>
+                <td>{{ product.category }}</td>
+                <td>{{ product.price }}</td>
+                <td>
+                  <a class="btn btn-sm btn-success" [routerLink]="['/products/edit', product.id]">Edit</a>
+                  <a class="btn btn-sm btn-danger" (click)="deleteProduct(product)">Delete</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

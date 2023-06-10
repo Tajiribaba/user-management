@@ -1,0 +1,10 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Hp Proobok",
+      "category": "Laptop",
+      "price": 20000
+    }
+  ]
+}
