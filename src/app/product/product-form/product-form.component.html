@@ -1,0 +1,28 @@
+<div class="content">
+  <div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card">
+        <div class="card-header">
+          Product Form
+        </div>
+        <div class="card-body">
+          <form (ngSubmit)="saveProduct()">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input class="form-control" type="text" id="name" [(ngModel)]="product.name" name="name" required>
+            </div>
+            <div class="form-group mt-3">
+              <label for="category">Product Category:</label>
+              <input class="form-control" type="text" id="category" [(ngModel)]="product.category" name="category" required>
+            </div>
+            <div class="form-group mt-3">
+              <label for="price">Price:</label>
+              <input class="form-control" type="number" id="price" [(ngModel)]="product.price" name="price" required>
+            </div>
+            <button class="btn-sm btn btn-success mt-5" type="submit">{{ isEditing ? 'Update' : 'Create' }} Product</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
