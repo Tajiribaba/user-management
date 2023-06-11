@@ -17,10 +17,10 @@
     {
       "id": 1,
       "userId": 1,
-      "date": "06-05-2020",
+      "date": "23-06-2023",
       "products": {
-        "productId": 2,
-        "quantity": 5
+        "productId": "2",
+        "quantity": "3"
       }
     },
     {
@@ -28,36 +28,9 @@
       "userId": 1,
       "date": "23-06-2023",
       "products": {
-        "productId": 1,
-        "quantity": 3
-      }
-    },
-    {
-      "id": 3,
-      "userId": 2,
-      "date": "03-03-2000",
-      "products": {
-        "productId": 4,
-        "quantity": 7
-      }
-    },
-    {
-      "userId": "4",
-      "date": "23-03-1995",
-      "products": {
         "productId": "3",
-        "quantity": "7"
-      },
-      "id": 4
-    },
-    {
-      "userId": "5",
-      "date": "04-07-2022",
-      "products": {
-        "productId": "3",
-        "quantity": "6"
-      },
-      "id": 5
+        "quantity": "4"
+      }
     }
   ]
 }
