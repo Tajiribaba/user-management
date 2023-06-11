@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { CardDesignComponent } from './card-design/card-design.component';
+import { UserDesignComponent } from './user-design/user-design.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     TaskListComponent,
-    CardDesignComponent
+    CardDesignComponent,
+    UserDesignComponent
   ],
   imports: [
     BrowserModule,
