@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { ProductComponent } from './product/product.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { ProductFormComponent } from './product/product-form/product-form.component';
-import { Form, FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CartComponent } from './cart/cart.component';
+import { CartFormComponent } from './cart/cart-form/cart-form.component';
 
 
 @NgModule({
@@ -17,13 +19,16 @@ import { Form, FormsModule } from '@angular/forms';
     MainComponent,
     TaskListComponent,
     ProductComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    CartComponent,
+    CartFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
