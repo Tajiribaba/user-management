@@ -30,7 +30,7 @@
                 <td>{{ cart.products.quantity }}</td>
                 <td>
                   <a class="btn btn-sm btn-success me-2" routerLink="`${/carts/edit}`, cart.id">Edit</a>
-                  <a class="btn btn-sm btn-danger me-2" >Delete</a>
+                  <a class="btn btn-sm btn-danger me-2" (click)="deleteCart(cart)">Delete</a>
                 </td>
               </tr>
             </tbody>

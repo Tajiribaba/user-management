@@ -30,10 +30,11 @@ export class CartComponent implements OnInit {
 
   // getACart(cart): void {}
 
-  deleteCart(id: string | number) {
-    this._cartServices.deleteCart(id).subscribe({
+  deleteCart(cart: Cart) {
+    this._cartServices.deleteCart(cart.id).subscribe({
       next: () => {
-        alert("Cart deleted successfuly")
+        alert("Cart deleted successfuly");
+        this.displayCarts();
       },
       error: console.log
     })

@@ -35,9 +35,9 @@ export class CartService {
   updateCart(id: string, cart: Cart): Observable<Cart> {
     return this.http.put<Cart>(`${this.endPoint}/carts/${id}`, cart);
   }
-
+ 
   // delete cart
-  deleteCart(id: string | number): Observable<void> {
+  deleteCart(id: number): Observable<void> {
     return this.http.delete<void>(`${this.endPoint}/carts/${id}`);
   }
 }
