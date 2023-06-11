@@ -1,0 +1,41 @@
+
+<!-- Add Cart Modal -->
+<div class="modal" id="addCartModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addCartModalLabel"><strong>Add To Cart</strong></h5>
+          <button type="button" class="btn-close" (click)="closeCartModal()" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formValues">
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="user" class="form-label"><b>User</b></label>
+                <input type="text" formControlName="userId" id="user" class="form-control" placeholder="Enter User">
+              </div>
+              <div class="col-sm-6">
+                <label for="date" class="form-label"><b>Date</b></label>
+                <input type="text" formControlName="date" id="date" class="form-control" placeholder="Enter Date">
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-6">
+                <label for="product" class="form-label"><b>Product</b></label>
+                <input type="text" formControlName="productId" id="product" class="form-control" placeholder="Enter Product">
+              </div>
+              <div class="col-sm-6">
+                <label for="quantity" class="form-label"><b>Quantity</b></label>
+                <input type="text" formControlName="quantity" id="quantity" class="form-control" placeholder="Enter Quantity">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="closeCartModal()" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="addToCart()">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
