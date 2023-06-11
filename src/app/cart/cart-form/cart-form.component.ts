@@ -13,6 +13,7 @@ export class CartFormComponent implements OnInit {
 
   formValues!: FormGroup;
   cart: Cart = {
+    id: 0,
     userId: 0,
     date: new Date(),
     products: {
