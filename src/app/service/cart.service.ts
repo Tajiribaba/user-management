@@ -32,7 +32,8 @@ export class CartService {
   }
 
   // update cart
-  updateCart(id: string, cart: Cart): Observable<Cart> {
+  updateCart(id: number, cart: Cart): Observable<Cart> {
+    // const id = cart.id;
     return this.http.put<Cart>(`${this.endPoint}/carts/${id}`, cart);
   }
  
